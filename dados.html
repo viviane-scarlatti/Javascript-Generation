@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>.: Login :.</title>
+    </head>
+
+    <body>
+        <h1>Conecte-se</h1>
+    </hr>
+
+        Seu email
+        <input type="text" id="email">
+        <br/>
+        Sua senha
+        <input type="password" id="password">
+
+        <button onclick="valida()">Conectar!</button>
+
+        <div id="resultado">
+
+        </div>
+
+    <script>
+        function valida(){
+            //email: gen@generation.org
+            // senha: generation
+        var email = document.getElementById("email").value;
+        var senha = document.getElementById("password").value;
+        if (email === "gen@generation.org" && senha === "generation") {
+            document.getElementById("resultado").innerHTML="Conectado!!!";
+        }
+        else{
+            document.getElementById("resultado").innerHTML = "Usuário/senha Inválidos";
+
+        }
+        console.log("Email digitado = " + email);
+        console.log("Senha digitada = "+senha);
+        }
+
+    </script>
+    </body>
+</html>
