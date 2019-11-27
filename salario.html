@@ -1,0 +1,42 @@
+<!-- Faça um programa que leia o salário de uma pessoa e calcule o imposto devido,
+segundo as regras:
+a. se o salário é menor que $1000, então a pessoa está isenta de impostos
+b. se o salário está entre $1000 e $2500, desconte 12,5% do salário
+c. se o salário está entre $2500 e $5000, desconte 25% do salário
+d. se o salário for maior que $5000, desconte um valor fixo de $1300.-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="salario.css">
+    
+
+        <title>.: Exercício :. </title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="text" id="salario">
+                <button class = "custombutton" onclick="totalizarEExibir();"> CALCULAR! </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="resultado">
+                Valor do imposto devido: <br/>
+                Valor do salario total: <br/>
+            </div>
+        </div>
+
+        <script src="salario.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+</html>
