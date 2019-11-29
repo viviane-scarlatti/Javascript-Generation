@@ -1,0 +1,20 @@
+function separar(){
+    var nome = document.getElementById("nomao").value;
+    var pos = 0;
+    var primPalavra;
+    console.log("Li o nome = "+nome);
+    console.log("Tamanho da palavra = "+nome.length);
+
+    pos = nome.indexOf(" ");
+    console.log("O primeiro espaço está na posição "+pos);
+
+    while(pos >=0){
+    primPalavra = nome.slice(0, pos);
+    console.log("Extraida a palavra = "+primPalavra);
+    nome = nome.slice(pos+1);
+    pos=nome.indexOf(" ");
+    }
+    primPalavra = nome;
+    console.log("Extraida a palavra = "+primPalavra);
+}
+
