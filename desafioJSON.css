@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.topo {
+    background-color: rgb(212, 104, 171);
+    margin-top: 10px;
+    text-shadow: 2px 2px 8px black;
+    
+}
+h1{
+    text-align: center;
+
+}
+
+body {
+    background-color: rgb(217, 174, 221);
+}
+
+#result {
+    background-color: rgba(196, 205, 255, 0.925);
+    text-align: center;
+    margin-top: 10px;
+}
