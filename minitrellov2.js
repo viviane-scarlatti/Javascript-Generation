@@ -1,22 +1,19 @@
-function buscarTarefas(){
-    var URL = "http://www.professorisidro.com.br/tarefas.php";
-    fetch(URL,{"method":"GET"})
-    .then(response => response.json())
-    .then(json => exibeTarefas(json));
-}
-
-function exibeTarefas(json){
-    var result = document.getElementById("resultado");
-
-
-    for (i=0; i<json.length; i++) {
-        result.innerHTML += json[i].nome + "</br>";   
-}
-}
-
-// fim primeira parte
-
 var numTarefa = 0;
+
+function recuperartudo(){
+    fetch("http://www.professorisidro.com.br/tarefas.php", {"method":"GET"})
+       .then(response => response.json())
+       .then(json => geraTodas(json));
+}
+
+function geraTodas(json){
+    console.log("tudao = "+JSON.stringify(json));
+    for (i=0; i<json.length; i++) {
+        let tarefa = json[i];
+        console.log("tarefa = "+tarefa);
+        criarTarefa(tarefa.nome);
+    }
+}
 
 function criarTarefa(texto){
     numTarefa++;
@@ -60,4 +57,7 @@ function recebeItem(evt){
     //    alert("nesta versao nao aninhamos tarefas...")
    // }
   
+
+    
+
 }

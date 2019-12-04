@@ -10,23 +10,48 @@
 
 <body>
 
-    <div class="container"></div>
+    <div class="container">
         <div class="row" id="titulo">
             <div class="col-md-12">Mini Trello</div>
+      
+    <button class="btn" onclick="buscarTarefas();">Buscar Tarefas</button>  </div> </div>
+
+
+    <div class="row" id="titulos">
+    <div class="col-md-4">
+        <h3>Pendentes</h3>
+        <div class= "col-md-4" id="resultado"></div>
+    </div>
+    
+    <div class="col-md-4">
+        <h3>Fazendo</h3>
+
+    </div>
+   <div class="col-md-4">
+       <h3> Concluidas</h3>
+
+    </div>
+</div>
+
+    <!-- arrastar -->
+    
+    <div class="row" id="tarefas">
+        <div class="col-md-4 coluna" ondrop="recebeItem(event);" ondragover="habilitaArrastar(event);"
+            id="pendentes">
+            
+
         </div>
+        <div class="col-md-4 coluna" ondrop="recebeItem(event);" ondragover="habilitaArrastar(event);" id="fazendo">
 
+        </div>
+        <div class="col-md-4 coluna" ondrop="recebeItem(event);" ondragover="habilitaArrastar(event);" id="feitas">
 
+        </div>
+    </div>
 
+</div>
 
-
-
-
-
-
-
-
-
-
+ 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
